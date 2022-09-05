@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Snake from "./Snake";
 import "./App.css";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className="playablearea">
-        <div className="snake"></div>
+        <Snake snakeDots={snakeDots} />
       </div>
     </div>
   );
